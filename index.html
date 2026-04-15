@@ -1,313 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryvox Forge</title>
-
-    <meta property="og:title" content="Ryvox Forge" />
-    <meta property="og:description" content="Minecraft plugins, PvP texture packs & mods by Ryvox." />
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-
-        :root{
-          --bg:#070a0f;
-          --card:rgba(255,255,255,0.04);
-          --stroke:rgba(255,255,255,0.08);
-          --text:#e6edf3;
-          --muted:#9aa4b2;
-          --accent:#58a6ff;
-        }
-
-        *{margin:0;padding:0;box-sizing:border-box;font-family:Inter}
-
-        body{
-          background: radial-gradient(circle at top,#0d1b2a,#070a0f);
-          color:var(--text);
-        }
-
-        /* HEADER */
-        header{text-align:center;padding:90px 20px}
-
-        h1{
-          font-size:56px;
-          font-weight:800;
-          background: linear-gradient(90deg,#58a6ff,#a855f7);
-          -webkit-background-clip:text;
-          -webkit-text-fill-color:transparent;
-        }
-
-        .sub{color:var(--muted);margin-top:10px}
-
-        /* GRID */
-        .grid{
-          max-width:1100px;
-          margin:auto;
-          padding:40px 20px;
-          display:grid;
-          grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-          gap:20px;
-        }
-
-        /* CARD */
-        .card{
-          background:var(--card);
-          border:1px solid var(--stroke);
-          border-radius:16px;
-          padding:20px;
-          transition:.2s;
-        }
-
-        .card:hover{
-          transform:translateY(-6px);
-          border-color:var(--accent);
-        }
-
-        .title{font-weight:700;font-size:18px}
-
-        .desc{color:var(--muted);margin-top:8px;font-size:14px}
-
-        .tag{
-          margin-top:12px;
-          font-size:12px;
-          display:block;
-        }
-
-        /* STATS */
-        .stats{
-          margin-top:10px;
-          display:flex;
-          flex-direction:column;
-          gap:6px;
-          font-size:13px;
-          color:var(--muted);
-        }
-
-        .stats strong{
-          color:var(--accent);
-        }
-
-        /* WIDGETS */
-        .widgets{
-          max-width:1100px;
-          margin:40px auto;
-          padding:0 20px;
-          display:grid;
-          grid-template-columns:1fr 1fr;
-          gap:20px;
-        }
-
-        .widget{
-          background:var(--card);
-          border:1px solid var(--stroke);
-          border-radius:16px;
-          padding:15px;
-        }
-
-        .widget iframe{
-          width:100%;
-          height:250px;
-          border:0;
-          border-radius:12px;
-        }
-
-        @media(max-width:800px){
-          .widgets{grid-template-columns:1fr;}
-        }
-        a{
-  color: inherit;
-  text-decoration: none;
-}
-    </style>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="assets/ui/ryvox-nav.css">
+    <link rel="stylesheet" href="assets/styles/pages/home.css">
+    <script defer src="assets/ui/ryvox-nav.js"></script>
 </head>
-
 <body>
+<div id="ryvox-nav"></div>
+<canvas id="bg"></canvas>
 
-<header>
+<section class="hero">
     <h1>Ryvox Forge</h1>
-    <div class="sub">Minecraft Plugins • PvP Packs • Mods</div>
-</header>
+    <p>Next-gen Minecraft plugins, packs & mods</p>
+    <a href="#projects" class="btn">Explore</a>
+</section>
 
-<div class="grid">
+<section id="projects" class="section reveal">
+    <div class="grid">
+        <a href="pvp/pvpflow.html" class="card">
+            <div class="title"><i data-lucide="swords" class="icon"></i>PvPFlow</div>
+            <div class="desc">Competitive PvP pack</div>
+            <div class="stats">Downloads: <strong id="pvp-mod"></strong></div>
+        </a>
 
-    <!-- PvPFlow -->
-    <a href="pvp/pvpflow.html" class="card card-link">
-        <div class="title">🔥 PvPFlow</div>
-        <div class="desc">PvP texture pack</div>
+        <a href="np/novapixel.html" class="card">
+            <div class="title"><i data-lucide="sparkles" class="icon"></i>NovaPixel</div>
+            <div class="desc">Clean modern visuals</div>
+            <div class="stats">Downloads: <strong id="nova-mod"></strong></div>
+        </a>
 
-        <div class="stats">
-            📥 Modrinth: <strong id="pvp-mod">...</strong><br>
-            📥 CurseForge: <strong id="pvp-curse">...</strong>
-        </div>
-    </a>
+        <a href="PulseEvents/index.html" class="card">
+            <div class="title"><i data-lucide="zap" class="icon"></i>PulseEvents</div>
+            <div class="desc">Automated server events</div>
+            <div class="stats">Downloads: <strong id="pulse-mod"></strong></div>
+        </a>
 
-    <!-- NovaPixel -->
-    <a href="np/novapixel.html" class="card card-link">
-        <div class="title">✨ NovaPixel</div>
-        <div class="desc">Modern texture pack</div>
-
-        <div class="stats">
-            📥 Modrinth: <strong id="nova-mod">...</strong><br>
-            📥 CurseForge: <strong id="nova-curse">...</strong>
-        </div>
-    </a>
-
-    <!-- PulseEvents -->
-    <a href="PulseEvents/index.html" class="card card-link">
-        <div class="title">⚡ PulseEvents</div>
-        <div class="desc">Event plugin</div>
-
-        <div class="stats">
-            📥 Downloads: <strong id="pulse-mod">...</strong>
-        </div>
-    </a>
-
-</div>
-
-<div class="widgets">
-
-    <div class="widget">
-        <h3>💬 Discord</h3>
-        <iframe src="https://discord.com/widget?id=1434212767652511956&theme=dark"></iframe>
+        <a href="wip/" class="card">
+            <div class="title"><i data-lucide="flask-conical" class="icon"></i>VoidSpire</div>
+            <div class="desc">Work in progress</div>
+            <div class="stats">In development</div>
+        </a>
     </div>
+</section>
 
-    <div class="widget">
-
-        <h3>📊 System Status</h3>
-
-        <div style="color:var(--muted); font-size:13px; line-height:1.7">
-
-            <p>🌐 Website: <strong id="status-site">Checking...</strong></p>
-            <p>🐙 GitHub API: <strong id="status-github">Checking...</strong></p>
-            <p>📦 Modrinth API: <strong id="status-modrinth">Checking...</strong></p>
-            <p>⚠️ CurseForge API: <strong id="status-curseforge">Checking...</strong></p>
-
-            <hr style="margin:10px 0; border:1px solid rgba(255,255,255,0.08)">
-
-            <p id="status-summary">Running diagnostics...</p>
-
-        </div>
-
+<section class="section reveal">
+    <h2>Why Ryvox?</h2>
+    <div class="features">
+        <div class="feature">⚡ High performance</div>
+        <div class="feature">🎮 Built for gameplay</div>
+        <div class="feature">🧠 Clean code</div>
+        <div class="feature">🚀 Frequent updates</div>
+        <a href="about.html" class="btn btn--ghost">👁️ About me</a>
     </div>
+</section>
 
+<section class="section reveal">
+    <h2>Status</h2>
+    <div class="status">
+        Website: <strong id="status-site"></strong><br>
+        GitHub: <strong id="status-github"></strong><br>
+        Modrinth: <strong id="status-modrinth"></strong>
     </div>
+</section>
 
-</div>
-
-<script>
-    async function loadStats(){
-
-      // MODRINTH
-      async function mod(slug, el){
-        try{
-          let r = await fetch("https://api.modrinth.com/v2/project/"+slug);
-          let d = await r.json();
-          document.getElementById(el).textContent = d.downloads.toLocaleString();
-        }catch{
-          document.getElementById(el).textContent = "N/A";
-        }
-      }
-
-      mod("pulseevents","pulse-mod");
-      mod("pvpflow","pvp-mod");
-      mod("novapixel","nova-mod");
-
-      // CURSEFORGE (scrape)
-      async function curse(slug, el){
-        try{
-          let proxy = "https://api.allorigins.win/raw?url=";
-          let url = encodeURIComponent("https://www.curseforge.com/minecraft/texture-packs/"+slug);
-
-          let res = await fetch(proxy+url);
-          let html = await res.text();
-
-          let match = html.match(/Downloads<\/span>\s*<span[^>]*>([\d,]+)/);
-
-          document.getElementById(el).textContent = match ? match[1] : "N/A";
-        }catch{
-          document.getElementById(el).textContent = "N/A";
-        }
-      }
-
-      curse("pvpflow","pvp-curse");
-      curse("novapixel","nova-curse");
-    }
-
-    loadStats();
-</script>
-<script>
-    async function checkStatus(){
-
-      const results = {
-        site: false,
-        github: false,
-        modrinth: false,
-        curseforge: false
-      };
-
-      // 🌐 SITE CHECK (self ping)
-      try{
-        const res = await fetch(window.location.href, { cache: "no-store" });
-        results.site = res.ok;
-      }catch{
-        results.site = false;
-      }
-
-      // 🐙 GITHUB API
-      try{
-        const res = await fetch("https://api.github.com");
-        results.github = res.ok;
-      }catch{
-        results.github = false;
-      }
-
-      // 📦 MODRINTH API
-      try{
-        const res = await fetch("https://api.modrinth.com/v2/project/pulseevents");
-        results.modrinth = res.ok;
-      }catch{
-        results.modrinth = false;
-      }
-
-      // ⚠️ CURSEFORGE (test endpoint proxy-safe)
-      try{
-        const res = await fetch("https://www.curseforge.com");
-        results.curseforge = res.ok;
-      }catch{
-        results.curseforge = false;
-      }
-
-      // 🔥 UI UPDATE
-      document.getElementById("status-site").textContent =
-        results.site ? "Online" : "Offline";
-
-      document.getElementById("status-github").textContent =
-        results.github ? "Operational" : "Down";
-
-      document.getElementById("status-modrinth").textContent =
-        results.modrinth ? "Operational" : "Down";
-
-      document.getElementById("status-curseforge").textContent =
-        results.curseforge ? "Reachable" : "Blocked";
-
-      // 📊 SUMMARY
-      const ok = Object.values(results).filter(v => v).length;
-
-      let msg = "";
-
-      if(ok === 4) msg = "All systems operational.";
-      else if(ok >= 2) msg = "Partial degradation detected.";
-      else msg = "Major outages detected.";
-
-      document.getElementById("status-summary").textContent = msg;
-    }
-
-    checkStatus();
-
-    // refresh co 60 sekund
-    setInterval(checkStatus, 60000);
-</script>
+<script defer src="assets/scripts/pages/home.js"></script>
 </body>
 </html>

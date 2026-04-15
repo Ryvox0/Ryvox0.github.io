@@ -1,229 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PulseEvents Roadmap</title>
-
-    <style>
-        :root {
-          --bg: #0d1117;
-          --card: #161b22;
-          --text: #e6edf3;
-          --muted: #9da7b3;
-          --accent: #58a6ff;
-          --border: #30363d;
-          --done: #2ea043;
-          --progress: #f0b429;
-          --planned: #8b949e;
-        }
-
-        body {
-          margin: 0;
-          font-family: Arial, Helvetica, sans-serif;
-          background: var(--bg);
-          color: var(--text);
-        }
-
-        header {
-          text-align: center;
-          padding: 60px 20px 30px;
-          border-bottom: 1px solid var(--border);
-        }
-
-        h1 {
-          margin: 0;
-          font-size: 40px;
-        }
-
-        .subtitle {
-          color: var(--muted);
-          margin-top: 10px;
-        }
-
-        .container {
-          max-width: 900px;
-          margin: auto;
-          padding: 40px 20px;
-        }
-
-        .timeline {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-        }
-
-        .item {
-          background: var(--card);
-          border: 1px solid var(--border);
-          border-radius: 14px;
-          padding: 20px;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .status {
-          display: inline-block;
-          padding: 4px 10px;
-          border-radius: 6px;
-          font-size: 12px;
-          font-weight: bold;
-          margin-bottom: 10px;
-        }
-
-        .done { background: var(--done); color: #fff; }
-        .progress { background: var(--progress); color: #000; }
-        .planned { background: var(--planned); color: #000; }
-
-        h3 {
-          margin: 0 0 8px 0;
-          color: var(--text);
-        }
-
-        p {
-          margin: 0;
-          color: var(--muted);
-          line-height: 1.5;
-        }
-
-        .bar {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 4px;
-          height: 100%;
-          background: var(--accent);
-        }
-
-        .footer {
-          text-align: center;
-          color: var(--muted);
-          padding: 30px;
-          border-top: 1px solid var(--border);
-          margin-top: 40px;
-        }
-
-        .back {
-          display: inline-block;
-          margin-top: 20px;
-          padding: 10px 15px;
-          background: var(--accent);
-          color: #000;
-          text-decoration: none;
-          border-radius: 8px;
-          font-weight: bold;
-        }
-
-        .back:hover {
-          opacity: 0.85;
-        }
-        .fixed-nav{
-  position:fixed;
-  top:15px;
-  left:50%;
-  transform:translateX(-50%);
-  display:flex;
-  gap:10px;
-
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.08);
-  backdrop-filter: blur(12px);
-
-  padding:8px;
-  border-radius:14px;
-
-  z-index:999;
-}
-
-.fixed-nav a{
-  color:#e6edf3;
-  text-decoration:none;
-  font-weight:600;
-  font-size:13px;
-
-  padding:8px 12px;
-  border-radius:10px;
-
-  transition:0.2s;
-}
-
-.fixed-nav a:hover{
-  background:rgba(88,166,255,0.15);
-  color:#58a6ff;
-}
-    </style>
+    <link rel="stylesheet" href="../assets/ui/ryvox-nav.css">
+    <link rel="stylesheet" href="../assets/styles/pages/pulseevents-roadmap.css">
+    <script defer src="../assets/ui/ryvox-nav.js"></script>
 </head>
-
 <body>
-<div class="fixed-nav">
+<div id="ryvox-nav"></div>
+<div class="glow"></div>
 
-    <a href="doc.html">📘 Docs</a>
-    <a href="roadmap.html">🧭 Roadmap</a>
-    <a href="https://modrinth.com/plugin/pulseevents" target="_blank">⬇ Download</a>
-
+<div class="hero">
+    <h1>PulseEvents Roadmap</h1>
+    <p>Progress • Development • Future features</p>
 </div>
-<header>
-    <h1>📊 PulseEvents Roadmap</h1>
-    <p class="subtitle">Development progress and future plans</p>
-</header>
 
 <div class="container">
-
-    <div class="timeline">
-
-        <div class="item">
-            <div class="bar"></div>
-            <span class="status done">DONE</span>
-            <h3>BossBar Countdown System</h3>
-            <p>Implemented live countdown using BossBar during event preparation.</p>
-        </div>
-
-        <div class="item">
-            <div class="bar"></div>
-            <span class="status done">DONE</span>
-            <h3>Core Event System</h3>
-            <p>Basic event registration, selection and execution system completed.</p>
-        </div>
-
-        <div class="item">
-            <div class="bar"></div>
-            <span class="status progress">IN PROGRESS</span>
-            <h3>GUI Event Manager</h3>
-            <p>Adding in-game GUI for easier event selection and management.</p>
-        </div>
-
-        <div class="item">
-            <div class="bar"></div>
-            <span class="status progress">IN PROGRESS</span>
-            <h3>Configuration Expansion</h3>
-            <p>More flexible YAML-based event configuration system.</p>
-        </div>
-
-        <div class="item">
-            <div class="bar"></div>
-            <span class="status planned">PLANNED</span>
-            <h3>PlaceholderAPI Support</h3>
-            <p>Integration with PlaceholderAPI for dynamic placeholders.</p>
-        </div>
-
-        <div class="item">
-            <div class="bar"></div>
-            <span class="status planned">PLANNED</span>
-            <h3>Vault Integration</h3>
-            <p>Economy and permission system integration via Vault.</p>
-        </div>
-
+    <div class="item">
+        <span class="status done">DONE</span>
+        <h3>Core Event Engine</h3>
+        <p>Event system with selection & execution logic.</p>
     </div>
 
-    <div style="text-align:center;">
-        <a class="back" href="../index.html">⬅ Back to Home</a>
+    <div class="item">
+        <span class="status done">DONE</span>
+        <h3>BossBar Countdown</h3>
+        <p>Live countdown before event start.</p>
     </div>
 
+    <div class="item">
+        <span class="status progress">IN PROGRESS</span>
+        <h3>GUI Event Manager</h3>
+        <p>In-game GUI for easier event control.</p>
+    </div>
+
+    <div class="item">
+        <span class="status progress">IN PROGRESS</span>
+        <h3>Config Expansion</h3>
+        <p>More advanced YAML configuration system.</p>
+    </div>
+
+    <div class="item">
+        <span class="status planned">PLANNED</span>
+        <h3>PlaceholderAPI Support</h3>
+        <p>Dynamic placeholders integration.</p>
+    </div>
+
+    <div class="item">
+        <span class="status planned">PLANNED</span>
+        <h3>Vault Integration</h3>
+        <p>Economy & permissions support.</p>
+    </div>
 </div>
 
-<div class="footer">
-    © 2026 PulseEvents • Roadmap
-</div>
-
+<footer>© 2026 PulseEvents</footer>
 </body>
 </html>

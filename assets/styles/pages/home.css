@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+:root{
+  --bg:#03050a;
+  --card:rgba(255,255,255,0.05);
+  --border:rgba(255,255,255,0.08);
+  --text:#e6edf3;
+  --muted:#8b949e;
+  --accent:#58a6ff;
+  --accent2:#a855f7;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+canvas{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.hero{
+  text-align:center;
+  padding:110px 20px 100px;
+}
+
+.hero h1{
+  font-size:80px;
+  font-weight:800;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+  margin-top:15px;
+  color:var(--muted);
+  font-size:20px;
+}
+
+.btn{
+  margin-top:30px;
+  display:inline-block;
+  padding:14px 30px;
+  border-radius:14px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:scale(1.08);
+}
+
+.btn--ghost{
+  margin-left:0;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.15);
+}
+
+.section{
+  max-width:1200px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:26px;
+  transition:.3s;
+  backdrop-filter:blur(14px);
+}
+
+.card:hover{
+  transform:translateY(-12px) scale(1.02);
+  border-color:var(--accent);
+  box-shadow:0 20px 60px #000;
+}
+
+.title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:22px;
+  font-weight:700;
+}
+
+.icon{
+  width:24px;
+  height:24px;
+  stroke:var(--accent);
+}
+
+.desc{
+  margin-top:10px;
+  color:var(--muted);
+}
+
+.stats{
+  margin-top:14px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+
+.feature{
+  padding:22px;
+  border-radius:18px;
+  background:var(--card);
+  border:1px solid var(--border);
+}
+
+.status{
+  margin-top:20px;
+  font-size:15px;
+}
+
+.online{color:#3fb950;}
+.offline{color:#f85149;}
+
+a{text-decoration:none;color:inherit}
+
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+@media(max-width:800px){
+  .hero h1{font-size:48px;}
+}
+
