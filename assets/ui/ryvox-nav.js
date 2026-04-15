@@ -19,9 +19,9 @@
     return '' +
       '<header class="rf-nav" data-rf-nav>' +
       '  <div class="rf-nav__inner">' +
-      '    <a class="rf-brand" href="' + base + '/index.html" aria-label="Ryvox Forge home">' +
+      '    <a class="rf-brand" href="' + base + '/index.html" aria-label="Core Hub home">' +
       '      <span class="rf-brand__mark" aria-hidden="true"></span>' +
-      '      <span class="rf-brand__text">Ryvox Forge</span>' +
+      '      <span class="rf-brand__text">Core Hub</span>' +
       '    </a>' +
       '    <button class="rf-nav__burger" type="button" data-rf-burger aria-label="Open navigation" aria-expanded="false">' +
       '      <span class="rf-burger" aria-hidden="true"></span>' +
