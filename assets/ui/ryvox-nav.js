@@ -53,6 +53,7 @@
       '        </div>' +
       '      </div>' +
       '      <a class="rf-item" data-rf-item data-route="voidspire" href="' + base + '/voidspire/index.html"><span class="rf-item__dot"></span>Voidspire</a>' +
+      '      <a class="rf-item" data-rf-item data-route="links" href="' + base + '/links/index.html"><span class="rf-item__dot"></span>Links</a>' +
       '      <a class="rf-item" data-rf-item data-route="about" href="' + base + '/about.html"><span class="rf-item__dot"></span>About</a>' +
       '    </nav>' +
       '    <div class="rf-nav__meta">' +
@@ -74,6 +75,7 @@
       '        <a class="rf-msub__item" data-rf-item data-route="pulseevents-roadmap" href="' + base + '/PulseEvents/roadmap.html">Roadmap</a>' +
       '      </div>' +
       '      <a class="rf-mitem" data-rf-item data-route="voidspire" href="' + base + '/voidspire/index.html">Voidspire</a>' +
+      '      <a class="rf-mitem" data-rf-item data-route="links" href="' + base + '/links/index.html">Links</a>' +
       '      <a class="rf-mitem" data-rf-item data-route="about" href="' + base + '/about.html">About</a>' +
       '    </nav>' +
       '  </div>' +
@@ -93,6 +95,7 @@
 
     var pulsePath = p.indexOf("/pulseevents/") !== -1 || p.endsWith("/pulseevents");
     var voidspirePath = p.indexOf("/voidspire/") !== -1 || p.endsWith("/voidspire");
+    var linksPath = p.indexOf("/links/") !== -1 || p.endsWith("/links");
     var aboutPath = p.endsWith("/about") || p.endsWith("/about.html");
     var homePath = p.endsWith("/index.html") && !pulsePath && !voidspirePath && p.indexOf("/np/") === -1 && p.indexOf("/pvp/") === -1;
 
@@ -101,6 +104,10 @@
 
     if (voidspirePath){
       return { active: "voidspire", crumb: "Voidspire" };
+    }
+
+    if (linksPath){
+      return { active: "links", crumb: "Links" };
     }
 
     if (pulsePath){
