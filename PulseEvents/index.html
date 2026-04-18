@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PulseEvents - Minecraft Plugin</title>
 
-    <meta name="description" content="Advanced automated Minecraft event plugin with queue system, BossBar UI, cooldowns and modular architecture.">
+    <meta name="description" content="Advanced automated Minecraft event plugin with fake live countdown UI, bossbar preview and mock web control panel.">
 
     <meta property="og:title" content="PulseEvents Plugin">
-    <meta property="og:description" content="Advanced automated event system with queue, UI and modular managers.">
+    <meta property="og:description" content="Interactive preview of PulseEvents countdowns, bossbars and control panel.">
     <meta property="og:url" content="https://Nexorv.github.io/PulseEvents/">
     <meta property="og:image" content="https://Nexorv.github.io/assets/pulseevents.png">
 
     <meta name="twitter:title" content="PulseEvents Plugin">
-    <meta name="twitter:description" content="Advanced automated Minecraft event system.">
+    <meta name="twitter:description" content="Interactive Minecraft event system showcase.">
     <meta name="twitter:image" content="https://Nexorv.github.io/assets/pulseevents.png">
 
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -24,112 +24,233 @@
 <body>
 
 <div id="ryvox-nav"></div>
-<div class="glow"></div>
+<div class="glow glow-left"></div>
+<div class="glow glow-right"></div>
 
 <section class="hero">
-    <h1>PulseEvents</h1>
-    <p>Next-gen automated Minecraft event system with queue engine & live UI</p>
+    <div class="hero-copy">
+        <span class="eyebrow">Minecraft Event Control</span>
+        <h1>PulseEvents</h1>
+        <p>Fake interactive showcase for countdowns, bossbars, live status, and a future web admin panel for your plugin.</p>
 
-    <div class="btns">
-        <a class="btn primary" href="https://modrinth.com/plugin/pulseevents" target="_blank">
-            <i data-lucide="download"></i>
-            Modrinth
-        </a>
+        <div class="btns">
+            <a class="btn primary" href="https://modrinth.com/plugin/pulseevents" target="_blank">
+                <i data-lucide="download"></i>
+                Modrinth
+            </a>
 
-        <a class="btn primary" href="https://www.curseforge.com/minecraft/bukkit-plugins/pulseevents" target="_blank">
-            <i data-lucide="download"></i>
-            CurseForge
-        </a>
+            <a class="btn primary" href="https://www.curseforge.com/minecraft/bukkit-plugins/pulseevents" target="_blank">
+                <i data-lucide="download"></i>
+                CurseForge
+            </a>
 
-        <a class="btn primary" href="https://www.spigotmc.org/resources/pulseevents.134140/" target="_blank">
-            <i data-lucide="download"></i>
-            Spigot
-        </a>
+            <a class="btn primary" href="https://www.spigotmc.org/resources/pulseevents.134140/" target="_blank">
+                <i data-lucide="download"></i>
+                Spigot
+            </a>
 
-        <a class="btn secondary" href="doc.html">
-            <i data-lucide="book"></i>
-            Documentation
-        </a>
+            <a class="btn secondary" href="doc.html">
+                <i data-lucide="book"></i>
+                Documentation
+            </a>
 
-        <a class="btn secondary" href="roadmap.html">
-            <i data-lucide="map"></i>
-            Roadmap
-        </a>
+            <a class="btn secondary" href="roadmap.html">
+                <i data-lucide="map"></i>
+                Roadmap
+            </a>
+        </div>
+
+        <div class="badge">Spigot | Paper | Java 17+</div>
     </div>
 
-    <div class="badge">Spigot • Paper • Java 17+</div>
+    <div class="hero-panel card">
+        <div class="server-topline">
+            <span class="signal online">Server Online</span>
+            <span class="signal">PulseEvents v0.0.3</span>
+        </div>
+
+        <div class="arena">
+            <div class="arena-header">
+                <span class="arena-label">Live Event Simulation</span>
+                <span id="event-phase" class="phase standby">Standby</span>
+            </div>
+
+            <h2 class="arena-title" id="event-name">Meteor Rush</h2>
+            <p class="arena-subtitle" id="event-message">Click start event to trigger a fake pre-start countdown and bossbar preview.</p>
+
+            <div class="countdown-shell">
+                <div class="countdown-label">Countdown</div>
+                <div class="countdown-value" id="countdown-value">--</div>
+            </div>
+
+            <div class="bossbar">
+                <div class="bossbar-meta">
+                    <span id="bossbar-title">BossBar Preview</span>
+                    <span id="bossbar-progress-text">0%</span>
+                </div>
+                <div class="bossbar-track">
+                    <div class="bossbar-fill" id="bossbar-fill"></div>
+                </div>
+            </div>
+
+            <div class="action-row">
+                <button class="btn primary action-btn" id="start-event" type="button">
+                    <i data-lucide="play"></i>
+                    Start Event
+                </button>
+                <button class="btn secondary action-btn" id="stop-event" type="button">
+                    <i data-lucide="square"></i>
+                    Stop Event
+                </button>
+            </div>
+        </div>
+    </div>
 </section>
 
 <div class="container">
 
-    <div class="card">
-        <h2><i data-lucide="zap" class="icon"></i>Overview</h2>
-        <p>
-            PulseEvents is a fully automated event engine for Minecraft servers.
-            It handles event scheduling, execution, announcements and UI feedback
-            without manual admin interaction.
-        </p>
-        <p>
-            Built with modular architecture, it ensures stability, scalability and clean integration with other plugins.
-        </p>
-    </div>
+    <section class="dashboard-grid">
+        <article class="card">
+            <div class="card-head">
+                <h2><i data-lucide="radio" class="icon"></i>Fake Live UI</h2>
+                <span class="mini-tag">Browser Preview</span>
+            </div>
+            <p>
+                This section simulates the in-game experience: pre-event countdown, bossbar fill, active state, and stop handling.
+                It is built as a fake showcase so players and server owners can understand how PulseEvents will feel.
+            </p>
+            <div class="stat-grid">
+                <div class="stat-box">
+                    <span class="stat-label">Selected Event</span>
+                    <strong id="selected-event">Meteor Rush</strong>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Mode</span>
+                    <strong id="status-mode">Idle</strong>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">BossBar</span>
+                    <strong id="bossbar-mode">Hidden</strong>
+                </div>
+            </div>
+        </article>
 
-    <div class="card">
-        <h2><i data-lucide="cpu" class="icon"></i>Core Systems</h2>
-        <div class="grid">
-            <div class="feature">🧠 EventManager</div>
-            <div class="feature">📢 AnnouncementManager</div>
-            <div class="feature">🎬 LiveUIManager</div>
-            <div class="feature">📦 Queue Engine</div>
-            <div class="feature">🛡 Anti-Abuse</div>
-            <div class="feature">⚙ Config System</div>
-        </div>
-    </div>
+        <article class="card panel-card">
+            <div class="card-head">
+                <h2><i data-lucide="monitor-smartphone" class="icon"></i>Fake Web Panel</h2>
+                <span class="mini-tag">Mock Admin</span>
+            </div>
+            <p>
+                Mock control panel for changing plugin behavior later. It includes an event list, statuses, and simple start or stop controls.
+            </p>
 
-    <div class="card">
-        <h2><i data-lucide="layers" class="icon"></i>Features</h2>
-        <div class="grid">
-            <div class="feature">⚡ Automatic events</div>
-            <div class="feature">📦 Queue system</div>
-            <div class="feature">🎯 BossBar countdown</div>
-            <div class="feature">🎬 ActionBar & Titles</div>
-            <div class="feature">🌍 Multi-world</div>
-            <div class="feature">💰 Vault support</div>
-            <div class="feature">🔐 Permissions</div>
-            <div class="feature">🧠 Cooldowns</div>
-        </div>
-    </div>
+            <div class="panel-shell">
+                <div class="panel-toolbar">
+                    <div>
+                        <span class="toolbar-label">Panel Status</span>
+                        <strong>Connected to demo server</strong>
+                    </div>
+                    <button class="panel-button" id="cycle-event" type="button">Change Event</button>
+                </div>
 
-    <div class="card">
-        <h2><i data-lucide="terminal"></i>Commands</h2>
-        <p>
-            /pe start — start event<br>
-            /pe stop — stop event<br>
-            /pe status — system state<br>
-            /pe reload — safe reload<br>
-            /pe update — check updates<br>
-            /pe queue add &lt;event&gt;<br>
-            /pe queue list
-        </p>
-    </div>
+                <div class="event-list">
+                    <button class="event-item active" data-event="Meteor Rush" type="button">
+                        <span>Meteor Rush</span>
+                        <span class="event-state queued">Queued</span>
+                    </button>
+                    <button class="event-item" data-event="Treasure Rain" type="button">
+                        <span>Treasure Rain</span>
+                        <span class="event-state idle">Idle</span>
+                    </button>
+                    <button class="event-item" data-event="King of Hill" type="button">
+                        <span>King of Hill</span>
+                        <span class="event-state idle">Idle</span>
+                    </button>
+                    <button class="event-item" data-event="PvP Frenzy" type="button">
+                        <span>PvP Frenzy</span>
+                        <span class="event-state cooldown">Cooldown</span>
+                    </button>
+                </div>
 
-    <div class="card">
-        <h2><i data-lucide="shield"></i>Stability</h2>
-        <div class="grid">
-            <div class="feature">🛑 Single event lock</div>
-            <div class="feature">⏱ Cooldowns</div>
-            <div class="feature">🚫 Anti-spam</div>
-            <div class="feature">🔄 Safe reload</div>
-        </div>
-    </div>
+                <div class="panel-status">
+                    <div class="status-line">
+                        <span>Plugin Status</span>
+                        <strong id="plugin-status">Ready</strong>
+                    </div>
+                    <div class="status-line">
+                        <span>Current Event</span>
+                        <strong id="panel-current-event">Meteor Rush</strong>
+                    </div>
+                    <div class="status-line">
+                        <span>Scheduler</span>
+                        <strong id="scheduler-state">Waiting for input</strong>
+                    </div>
+                </div>
 
-    <div class="card">
-        <h2><i data-lucide="rocket"></i>Status</h2>
-        <p>
-            PulseEvents is actively developed and available for download on major platforms.
-            New features and improvements are released regularly.
-        </p>
-    </div>
+                <div class="panel-controls">
+                    <button class="btn primary action-btn" id="panel-start" type="button">
+                        <i data-lucide="rocket"></i>
+                        Start
+                    </button>
+                    <button class="btn secondary action-btn" id="panel-stop" type="button">
+                        <i data-lucide="pause"></i>
+                        Stop
+                    </button>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="info-grid">
+        <article class="card">
+            <div class="card-head">
+                <h2><i data-lucide="cpu" class="icon"></i>Core Systems</h2>
+            </div>
+            <div class="grid">
+                <div class="feature">EventManager</div>
+                <div class="feature">AnnouncementManager</div>
+                <div class="feature">LiveUIManager</div>
+                <div class="feature">Queue Engine</div>
+                <div class="feature">Anti-Abuse</div>
+                <div class="feature">Config System</div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-head">
+                <h2><i data-lucide="terminal" class="icon"></i>Commands</h2>
+            </div>
+            <div class="command-list">
+                <span>/pe start</span>
+                <span>/pe stop</span>
+                <span>/pe status</span>
+                <span>/pe reload</span>
+                <span>/pe queue add &lt;event&gt;</span>
+                <span>/pe queue list</span>
+            </div>
+        </article>
+
+        <article class="card roadmap-preview">
+            <div class="card-head">
+                <h2><i data-lucide="git-branch" class="icon"></i>Roadmap Snapshot</h2>
+                <a class="text-link" href="roadmap.html">Open Full Roadmap</a>
+            </div>
+            <div class="version-list">
+                <div class="version-item">
+                    <span class="version">0.0.1</span>
+                    <p>Base event cycle, first commands, initial actionbar messages.</p>
+                </div>
+                <div class="version-item">
+                    <span class="version">0.0.2</span>
+                    <p>Bossbar countdown, safer queue flow, cleaner event messaging.</p>
+                </div>
+                <div class="version-item">
+                    <span class="version">0.0.3</span>
+                    <p>Mock web panel concept, event statuses, UI polishing, stop-state fixes.</p>
+                </div>
+            </div>
+        </article>
+    </section>
 
 </div>
 

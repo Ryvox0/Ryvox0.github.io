@@ -6,10 +6,10 @@
 
     <title>PulseEvents Roadmap</title>
 
-    <meta name="description" content="Live development roadmap for PulseEvents plugin including completed, in-progress and planned features.">
+    <meta name="description" content="Version roadmap for PulseEvents from 0.0.1 to 0.0.3 with added systems and fixes.">
 
     <meta property="og:title" content="PulseEvents Roadmap">
-    <meta property="og:description" content="Track development progress, completed systems and upcoming features.">
+    <meta property="og:description" content="Version-based release roadmap showing additions and fixes.">
     <meta property="og:url" content="https://Nexorv.github.io/PulseEvents/roadmap.html">
 
     <link rel="stylesheet" href="../assets/ui/ryvox-nav.css">
@@ -23,133 +23,127 @@
 <div class="glow"></div>
 
 <section class="hero">
+    <span class="eyebrow">Version Progress</span>
     <h1>PulseEvents Roadmap</h1>
-    <p>Development progress • Systems • Future expansion</p>
+    <p>Planned presentation of what shipped in each early version, plus the direction of the future web control panel.</p>
 </section>
 
 <div class="container">
 
-    <!-- LIVE STATUS PANEL -->
     <div class="item live">
-        <span class="status info">LIVE STATUS</span>
-        <h3>System Overview</h3>
+        <span class="status info">CURRENT BUILD</span>
+        <h3>Version 0.0.3 Preview</h3>
 
         <div class="live-grid">
             <div class="live-box">
-                <b>Status:</b> 🟢 Active Development
+                <b>Status:</b> Interactive concept ready
             </div>
             <div class="live-box">
-                <b>Version:</b> 0.0.3
+                <b>Latest Version:</b> 0.0.3
             </div>
             <div class="live-box">
-                <b>Phase:</b> Stability + UX improvements
+                <b>Main Focus:</b> UI simulation and event control flow
             </div>
             <div class="live-box">
-                <b>Focus:</b> Event system + UI expansion
+                <b>Next Goal:</b> Real plugin-backed web controls
             </div>
         </div>
     </div>
 
-    <!-- FEATURED -->
+    <h2 class="section-title">Version Timeline</h2>
+
     <div class="item featured">
-        <span class="status info">FEATURED</span>
-        <h3>Core Event Engine</h3>
-        <p>
-            Fully modular event lifecycle system powering all PulseEvents mechanics.
-            Handles execution, cancellation safety and state transitions.
-        </p>
-    </div>
-
-    <!-- COMPLETED -->
-    <h2 class="section-title">Completed Systems</h2>
-
-    <div class="item">
-        <span class="status done">COMPLETED</span>
-        <h3>BossBar Countdown System</h3>
-        <p>Real-time visual countdown displayed before event start.</p>
-    </div>
-
-    <div class="item">
-        <span class="status done">COMPLETED</span>
-        <h3>Announcement System</h3>
-        <p>Automated broadcast system with configurable timing.</p>
-    </div>
-
-    <div class="item">
-        <span class="status done">COMPLETED</span>
-        <h3>Vault Integration</h3>
-        <p>Economy support for rewards and payouts.</p>
+        <span class="status done">0.0.1</span>
+        <h3>Initial Plugin Foundation</h3>
+        <p>First public base for PulseEvents with the essential event flow and admin commands.</p>
+        <div class="release-grid">
+            <div class="release-box">
+                <h4>Added</h4>
+                <ul>
+                    <li>Base plugin setup and startup loading</li>
+                    <li>First event lifecycle manager</li>
+                    <li>Core commands: start, stop, status</li>
+                    <li>Simple announcements and chat feedback</li>
+                </ul>
+            </div>
+            <div class="release-box">
+                <h4>Fixed</h4>
+                <ul>
+                    <li>Startup registration issues for commands</li>
+                    <li>Basic state reset after stopping an event</li>
+                    <li>Safer checks for duplicate event starts</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="item">
-        <span class="status done">COMPLETED</span>
-        <h3>Cooldown System</h3>
-        <p>Prevents spam and abuse of event triggers.</p>
+        <span class="status progress">0.0.2</span>
+        <h3>Countdown and BossBar Upgrade</h3>
+        <p>Focused release that made events feel more alive before they started and more reliable while queued.</p>
+        <div class="release-grid">
+            <div class="release-box">
+                <h4>Added</h4>
+                <ul>
+                    <li>Fake and in-game styled bossbar countdown concept</li>
+                    <li>Queue handling for upcoming events</li>
+                    <li>Improved actionbar and title messaging</li>
+                    <li>More visible event status feedback for players</li>
+                </ul>
+            </div>
+            <div class="release-box">
+                <h4>Fixed</h4>
+                <ul>
+                    <li>Countdown desync after manual stop</li>
+                    <li>Queue order issues when two events were triggered fast</li>
+                    <li>Bossbar visibility not clearing correctly after finish</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="item">
-        <span class="status done">COMPLETED</span>
-        <h3>Multi-World Support</h3>
-        <p>Isolated event execution per world.</p>
+        <span class="status planned">0.0.3</span>
+        <h3>Fake Web Panel and Status Control</h3>
+        <p>Version concept for showing where the plugin is heading: event list, statuses, and browser-side control ideas.</p>
+        <div class="release-grid">
+            <div class="release-box">
+                <h4>Added</h4>
+                <ul>
+                    <li>Fake browser panel for changing plugin settings later</li>
+                    <li>Interactive list of events with visible statuses</li>
+                    <li>Start and stop controls in a panel layout</li>
+                    <li>Landing page simulation with countdown and bossbar preview</li>
+                </ul>
+            </div>
+            <div class="release-box">
+                <h4>Fixed</h4>
+                <ul>
+                    <li>Stop-state messaging now resets cleanly in the demo</li>
+                    <li>Selected event and panel state stay synchronized</li>
+                    <li>Roadmap presentation now reflects version changes clearly</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <!-- IN DEVELOPMENT -->
-    <h2 class="section-title">In Development</h2>
+    <h2 class="section-title">Planned After 0.0.3</h2>
 
     <div class="item">
-        <span class="status progress">IN DEV</span>
-        <h3>GUI Event Manager</h3>
-        <p>In-game interface for controlling events without commands.</p>
-    </div>
-
-    <div class="item">
-        <span class="status progress">IN DEV</span>
-        <h3>Advanced Config System</h3>
-        <p>Modular YAML system with per-event overrides.</p>
-    </div>
-
-    <div class="item">
-        <span class="status progress">IN DEV</span>
-        <h3>Live UI Expansion</h3>
-        <p>Improved BossBar, ActionBar and Title system.</p>
-    </div>
-
-    <div class="item">
-        <span class="status progress">IN DEV</span>
-        <h3>Event Queue Optimizer</h3>
-        <p>Smarter scheduling and priority-based execution.</p>
-    </div>
-
-    <!-- PLANNED -->
-    <h2 class="section-title">Planned</h2>
-
-    <div class="item">
-        <span class="status planned">PLANNED</span>
-        <h3>PlaceholderAPI Integration</h3>
-        <p>Dynamic placeholders for server and player data.</p>
+        <span class="status info">NEXT</span>
+        <h3>Real Control Panel Backend</h3>
+        <p>Connect the future panel to live plugin data so admins can change settings, inspect status, and trigger events remotely.</p>
     </div>
 
     <div class="item">
-        <span class="status planned">PLANNED</span>
-        <h3>Developer API</h3>
-        <p>External plugin control and event triggering.</p>
-    </div>
-
-    <div class="item">
-        <span class="status planned">PLANNED</span>
-        <h3>Web Control Panel</h3>
-        <p>Browser dashboard for live monitoring.</p>
-    </div>
-
-    <div class="item">
-        <span class="status planned">PLANNED</span>
-        <h3>Custom Event Builder</h3>
-        <p>Create fully custom events via config or UI.</p>
+        <span class="status info">NEXT</span>
+        <h3>Expanded Event Editing</h3>
+        <p>Add event-specific configuration, reward editing, and permission-aware controls in both game and web views.</p>
     </div>
 
 </div>
 
-<footer>© 2026 PulseEvents</footer>
+<footer>(c) 2026 PulseEvents</footer>
 
 </body>
 </html>
