@@ -3,121 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NovaPixel project page.">
+
+  <!-- SEO -->
+  <meta name="description" content="NovaPixel - modern high-contrast PvP texture pack for Minecraft.">
+  <meta name="theme-color" content="#07111b">
+  <meta property="og:title" content="NovaPixel | PvP Texture Pack">
+  <meta property="og:description" content="High-contrast PvP pack focused on clarity, speed, and clean visuals.">
+
   <title>DevNexus | NovaPixel</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/pages.css">
   <link rel="stylesheet" href="assets/css/project.css">
 </head>
+
 <body class="page-project page-novapixel">
-  <div class="site-shell">
-    <header class="navbar">
-      <nav class="nav-container" aria-label="Primary">
-        <div class="nav-brandbar">
-          <a class="nav-logo" href="index.html">DevNexus</a>
-          <p class="nav-status">Project hub for plugins, packs, and experiments</p>
-        </div>
-        <div class="nav-menu-row">
-          <div class="nav-links" id="site-nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#projects">Projects</a>
-            <a href="index.html#featured">Featured</a>
-            <a href="contact.html">Contact</a>
-          </div>
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </nav>
-    </header>
+<div class="site-shell">
 
-    <main class="page-main">
-      <section class="page-hero page-hero-cyan">
-        <p class="section-label">Modern PvP Pack</p>
-        <h1>NovaPixel</h1>
-        <p class="section-copy">A live high-contrast PvP pack focused on clarity, speed, and clean modern visuals for both competitive and everyday play.</p>
-        <div class="hero-highlights">
-          <span class="signal-pill cyan">CurseForge</span>
-          <span class="signal-pill blue">0.3 release</span>
-          <span class="signal-pill purple">GPLv3</span>
-        </div>
-      </section>
-
-      <section class="meta-layout">
-        <article class="glass-card status-card color-cyan">
-          <span class="project-tag">Live Release</span>
-          <h2>Active And Available</h2>
-          <p>Publicly available on CurseForge. The current listed release is NovaPixel 0.3 for Minecraft 1.21.11, built around visibility, lightweight textures, and a blue-purple competitive style.</p>
-          <div class="progress-track" aria-label="NovaPixel project state">
-            <div class="progress-bar progress-cyan width-64"></div>
-          </div>
-          <div class="action-row">
-            <a class="btn btn-primary" href="https://www.curseforge.com/minecraft/texture-packs/novapixel" target="_blank" rel="noreferrer">Open CurseForge</a>
-            <a class="btn btn-secondary" href="https://www.curseforge.com/minecraft/texture-packs/novapixel/files/7744531" target="_blank" rel="noreferrer">Latest File</a>
-          </div>
-        </article>
-
-        <article class="glass-card meta-card">
-          <h3>Verified Details</h3>
-          <dl class="meta-grid">
-            <dt>Status</dt>
-            <dd>Live</dd>
-            <dt>Platform</dt>
-            <dd>CurseForge</dd>
-            <dt>Latest Release</dt>
-            <dd>NovaPixel 0.3</dd>
-            <dt>Version</dt>
-            <dd>Minecraft 1.21.11</dd>
-            <dt>Updated</dt>
-            <dd>March 27, 2026</dd>
-            <dt>License</dt>
-            <dd>GPLv3</dd>
-          </dl>
-        </article>
-      </section>
-
-      <section class="wip-layout">
-        <article class="glass-card notes-card">
-          <h3>Public Feature Set</h3>
-          <ul class="feature-list">
-            <li>High-contrast textures built for visibility</li>
-            <li>Electric blue and neon purple theme</li>
-            <li>PvP-optimized weapons and items</li>
-            <li>Minimal, lightweight visual direction</li>
-          </ul>
-        </article>
-
-        <article class="glass-card notes-card">
-          <h3>Release Notes Snapshot</h3>
-          <ul class="status-list">
-            <li>Custom PvP-styled swords were introduced in the public release notes</li>
-            <li>Armor, ore, and item textures were improved for readability</li>
-            <li>Custom glint effects were added for armor and items</li>
-            <li>Some smaller elements were credited to Vanilla Tweaks</li>
-          </ul>
-        </article>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-brand">
-        <h2>DevNexus</h2>
-        <p>NovaPixel is released and publicly available.</p>
+  <!-- NAV -->
+  <header class="navbar">
+    <nav class="nav-container">
+      <div class="nav-brandbar">
+        <a class="nav-logo" href="index.html">DevNexus</a>
+        <p class="nav-status">Project hub for plugins, packs, and experiments</p>
       </div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </footer>
-  </div>
 
-  <script src="assets/js/nav.js"></script>
-  <script src="assets/js/scroll.js"></script>
-  <script src="assets/js/project.js"></script>
+      <div class="nav-menu-row">
+        <div class="nav-links" id="site-nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#featured">Featured</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button class="nav-toggle" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+
+    <!-- HERO -->
+    <section class="page-hero page-hero-cyan">
+      <p class="section-label">PvP Texture Pack</p>
+
+      <h1>NovaPixel</h1>
+
+      <p class="section-copy">
+        A high-contrast PvP texture pack designed for maximum visibility, fast reaction time,
+        and a clean modern aesthetic.
+      </p>
+
+      <!-- CTA -->
+      <div class="hero-actions">
+        <a class="btn btn-primary"
+           href="https://www.curseforge.com/minecraft/texture-packs/novapixel"
+           target="_blank">
+          Download Pack
+        </a>
+
+        <a class="btn btn-secondary"
+           href="https://discord.gg/ZMje3neEmK"
+           target="_blank">
+          Join Discord
+        </a>
+      </div>
+
+      <div class="hero-highlights">
+        <span class="signal-pill cyan">Live Release</span>
+        <span class="signal-pill blue">v0.3 Stable</span>
+        <span class="signal-pill purple">Competitive Ready</span>
+      </div>
+
+      <p class="micro-note">Last updated: March 2026</p>
+    </section>
+
+    <!-- PREVIEW (NOWA SEKCJA - KLUCZOWA) -->
+    <section class="preview-section">
+      <div class="section-heading">
+        <p class="section-label">Preview</p>
+        <h2>In-Game Look</h2>
+      </div>
+
+      <div class="preview-grid">
+        <div class="preview-card glass-card">Screenshot Placeholder</div>
+        <div class="preview-card glass-card">PvP Scene</div>
+        <div class="preview-card glass-card">Items & UI</div>
+      </div>
+    </section>
+
+    <!-- META -->
+    <section class="meta-layout">
+
+      <article class="glass-card status-card color-cyan">
+        <span class="project-tag">Live Pack</span>
+
+        <h2>Available Now</h2>
+
+        <p>
+          NovaPixel is publicly available and actively used as a lightweight PvP pack
+          focused on clarity and performance.
+        </p>
+
+        <div class="progress-track">
+          <div class="progress-bar progress-cyan width-64"></div>
+        </div>
+
+        <div class="action-row">
+          <a class="btn btn-primary"
+             href="https://www.curseforge.com/minecraft/texture-packs/novapixel"
+             target="_blank">
+            Open CurseForge
+          </a>
+
+          <a class="btn btn-secondary"
+             href="https://www.curseforge.com/minecraft/texture-packs/novapixel/files/7744531"
+             target="_blank">
+            Latest Version
+          </a>
+        </div>
+      </article>
+
+      <article class="glass-card meta-card">
+        <h3>Details</h3>
+
+        <dl class="meta-grid">
+          <dt>Status</dt>
+          <dd>Live</dd>
+
+          <dt>Platform</dt>
+          <dd>CurseForge</dd>
+
+          <dt>Release</dt>
+          <dd>v0.3 Stable</dd>
+
+          <dt>Version</dt>
+          <dd>1.21+</dd>
+
+          <dt>Updated</dt>
+          <dd>March 2026</dd>
+
+          <dt>License</dt>
+          <dd>GPLv3</dd>
+        </dl>
+      </article>
+
+    </section>
+
+    <!-- FEATURES -->
+    <section class="wip-layout">
+
+      <article class="glass-card notes-card">
+        <h3>Why NovaPixel</h3>
+
+        <ul class="feature-list">
+          <li>Improves target visibility in PvP fights</li>
+          <li>Reduces visual noise for faster reaction time</li>
+          <li>Clean neon style without clutter</li>
+          <li>Lightweight and performance-friendly</li>
+        </ul>
+      </article>
+
+      <article class="glass-card notes-card">
+        <h3>Recent Changes</h3>
+
+        <ul class="status-list">
+          <li>Custom PvP swords added</li>
+          <li>Improved armor and item readability</li>
+          <li>Enhanced glint effects</li>
+          <li>Visual polish across multiple textures</li>
+        </ul>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <h2>DevNexus</h2>
+      <p>NovaPixel is live and actively available.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/project.js"></script>
 </body>
 </html>

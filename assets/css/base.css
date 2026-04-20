@@ -99,7 +99,7 @@ main,
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -502,4 +502,68 @@ main,
   .nav-status {
     font-size: 0.72rem;
   }
+}
+.projects-section {
+  padding: 6rem 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.project-card h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.4rem;
+}
+
+.project-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 800px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featured-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.featured-main h3 {
+  text-align: center;
+}
+
+.featured-main p {
+  text-align: center;
+}
+
+.featured-main .project-tag {
+  margin-bottom: 0.5rem;
+}
+
+.progress-track {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.hero-actions {
+  justify-content: center;
 }

@@ -3,214 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DevNexus - Minecraft project hub focused on MemoryChain, PulseEvents, and texture packs.">
+
+  <!-- SEO -->
+  <meta name="description" content="DevNexus - Minecraft development hub featuring MemoryChain, PulseEvents, and PvP texture packs.">
+  <meta name="theme-color" content="#07111b">
+  <meta property="og:title" content="DevNexus | Minecraft Project Hub">
+  <meta property="og:description" content="MemoryChain, PulseEvents, and PvP packs in one focused development hub.">
+  <meta property="og:type" content="website">
+
   <title>DevNexus | Project Hub</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/pages.css">
   <link rel="stylesheet" href="assets/css/home.css">
 </head>
+
 <body class="page-home">
-  <div class="site-shell">
-    <header class="navbar">
-      <nav class="nav-container" aria-label="Primary">
-        <div class="nav-brandbar">
-          <a class="nav-logo" href="index.html">DevNexus</a>
-          <p class="nav-status">Project hub for plugins, packs, and experiments</p>
-        </div>
-        <div class="nav-menu-row">
-          <div class="nav-links" id="site-nav-links">
-            <a href="#home">Home</a>
-            <a href="#featured">Featured</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </nav>
-    </header>
+<div class="site-shell">
 
-    <main class="page-main">
-      <section class="hero-section" id="home">
-        <div class="hero-grid"></div>
-        <div class="hero-glow hero-glow-left"></div>
-        <div class="hero-glow hero-glow-right"></div>
-        <div class="hero-content">
-          <p class="hero-kicker">Featured Plugin Network</p>
-          <h1>DEVNEXUS</h1>
-          <p class="hero-subtitle">MemoryChain is now the main focus. This hub tracks the featured plugin, PulseEvents development, and my active PvP texture packs.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="memorychain.html">Open MemoryChain</a>
-            <a class="btn btn-secondary" href="#projects">View All Projects</a>
-          </div>
-          <div class="hero-highlights">
-            <span class="signal-pill blue">MemoryChain featured</span>
-            <span class="signal-pill cyan">PulseEvents developing</span>
-            <span class="signal-pill red">Texture packs live</span>
-          </div>
-        </div>
-        <div class="hero-panel glass-card">
-          <div class="panel-row">
-            <span class="panel-label">Focus</span>
-            <span class="panel-value">Plugins / Texture Packs</span>
-          </div>
-          <div class="panel-row">
-            <span class="panel-label">Status</span>
-            <span class="panel-value accent-cyan">MemoryChain takes priority</span>
-          </div>
-          <div class="signal-strip">
-            <span class="signal-pill blue">MemoryChain</span>
-            <span class="signal-pill blue">PulseEvents</span>
-            <span class="signal-pill red">PvPFlow</span>
-            <span class="signal-pill cyan">NovaPixel</span>
-          </div>
-          <div class="panel-jump-list">
-            <a href="#featured">Featured project</a>
-            <a href="#projects">Project list</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="featured-section" id="featured">
-        <div class="section-heading">
-          <p class="section-label">Main Focus</p>
-          <h2>MemoryChain</h2>
-          <p class="section-copy">The homepage now revolves around one primary project. MemoryChain is the featured plugin and the main thing being built inside DevNexus.</p>
-        </div>
-
-        <div class="featured-layout">
-          <article class="glass-card featured-main featured-memorychain">
-            <span class="project-tag">Featured Plugin</span>
-            <h3>MemoryChain</h3>
-            <p>MemoryChain is the central plugin in the hub now. This page gives it the main position so the site reads clearly around one core build instead of too many side concepts.</p>
-            <div class="progress-track" aria-label="MemoryChain progress">
-              <div class="progress-bar progress-blue width-12"></div>
-            </div>
-            <p class="progress-note">Current public-facing progress: 12%.</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="memorychain.html">Open MemoryChain Page</a>
-              <a class="btn btn-secondary" href="contact.html">Contact</a>
-            </div>
-          </article>
-
-          <article class="glass-card featured-side">
-            <h3>What Changes Here</h3>
-            <ul class="status-list">
-              <li>MemoryChain becomes the main featured build</li>
-              <li>PulseEvents stays visible as an active plugin in development</li>
-              <li>PvPFlow and NovaPixel stay as texture packs</li>
-              <li>Old extra concept clutter is removed from the homepage</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="projects-section" id="projects">
-        <div class="section-heading">
-          <p class="section-label">Current Projects</p>
-          <h2>Active Lineup</h2>
-          <p class="section-copy">Only the main builds stay on the homepage now: one featured plugin, one developing plugin, and two live texture packs.</p>
-        </div>
-
-        <div class="projects-grid">
-          <a class="project-card project-blue glass-card interactive-card" href="memorychain.html">
-            <span class="project-tag">Featured Plugin</span>
-            <h3>MemoryChain</h3>
-            <p>Main plugin focus for the website and the current featured build across the whole DevNexus hub.</p>
-            <span class="card-link">Open project</span>
-          </a>
-
-          <a class="project-card project-blue glass-card interactive-card" href="pulseevents.html">
-            <span class="project-tag">Still Developing</span>
-            <h3>PulseEvents</h3>
-            <p>Active plugin still in development, kept on the site as the ongoing public development project.</p>
-            <span class="card-link">Open project</span>
-          </a>
-
-          <a class="project-card project-red glass-card interactive-card" href="pvpflow.html">
-            <span class="project-tag">Texture Pack</span>
-            <h3>PvPFlow</h3>
-            <p>Competitive PvP texture pack kept in the lineup as one of the live visual projects.</p>
-            <span class="card-link">Open project</span>
-          </a>
-
-          <a class="project-card project-cyan glass-card interactive-card" href="novapixel.html">
-            <span class="project-tag">Texture Pack</span>
-            <h3>NovaPixel</h3>
-            <p>Modern high-contrast PvP texture pack that stays as the second active pack in the hub.</p>
-            <span class="card-link">Open project</span>
-          </a>
-        </div>
-      </section>
-
-      <section class="subpages-section" id="about">
-        <div class="section-heading">
-          <p class="section-label">About DevNexus</p>
-          <h2>Smaller, Clearer Hub</h2>
-          <p class="section-copy">The site is now stripped back to the projects that matter right now, with MemoryChain at the front and the rest supporting that direction.</p>
-        </div>
-
-        <div class="subpages-grid">
-          <a class="glass-card subpage-link" href="memorychain.html">MemoryChain</a>
-          <a class="glass-card subpage-link" href="pulseevents.html">PulseEvents</a>
-          <a class="glass-card subpage-link" href="novapixel.html">NovaPixel</a>
-          <a class="glass-card subpage-link" href="pvpflow.html">PvPFlow</a>
-          <a class="glass-card subpage-link" href="contact.html">Contact</a>
-        </div>
-      </section>
-
-      <section class="info-strip-section">
-        <div class="info-strip glass-card">
-          <div>
-            <p class="section-label">Platform Presence</p>
-            <h2>Launch Channels</h2>
-          </div>
-          <div class="icon-link-row">
-            <a class="icon-link" href="https://github.com/Nexorv" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.05c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.72.08-.72 1.2.09 1.84 1.22 1.84 1.22 1.08 1.83 2.82 1.3 3.5.99.11-.77.42-1.3.77-1.59-2.66-.3-5.47-1.31-5.47-5.84 0-1.29.47-2.35 1.23-3.18-.12-.3-.53-1.52.12-3.16 0 0 1.01-.32 3.3 1.22a11.62 11.62 0 0 1 6.01 0c2.29-1.54 3.29-1.22 3.29-1.22.66 1.64.25 2.86.12 3.16.77.83 1.23 1.89 1.23 3.18 0 4.54-2.81 5.53-5.49 5.83.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
-              <span>GitHub</span>
-            </a>
-            <a class="icon-link" href="https://modrinth.com/user/Nexorv" target="_blank" rel="noreferrer" aria-label="Modrinth">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.25c-5.39 0-9.75 4.36-9.75 9.75S6.61 21.75 12 21.75 21.75 17.39 21.75 12 17.39 2.25 12 2.25Zm4.69 7.35-4.94 6.14a1.3 1.3 0 0 1-2.03-.03L7.3 12.63a1.06 1.06 0 0 1 1.64-1.34l1.73 2.12 4.37-5.4a1.06 1.06 0 0 1 1.65 1.34Z"/></svg>
-              <span>Modrinth</span>
-            </a>
-            <a class="icon-link" href="https://www.curseforge.com/members/ryvox006/projects" target="_blank" rel="noreferrer" aria-label="CurseForge">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.77 4.5c-2.08 0-3.49 1.07-4.36 2.7-.32-.14-.67-.2-1.03-.2-1.57 0-2.96 1.08-3.33 2.59A3.47 3.47 0 0 0 5.25 13c0 1.93 1.57 3.5 3.5 3.5h2.4c.78 1.78 2.3 3 4.62 3 2.99 0 5.23-2.28 5.23-5.47 0-1.52-.55-2.85-1.48-3.81.1-.36.15-.75.15-1.15 0-2.55-1.65-4.57-3.9-4.57ZM9.01 14.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm6.74 2c-1.53 0-2.6-1.12-2.6-2.63 0-1.51 1.07-2.62 2.6-2.62 1.54 0 2.61 1.11 2.61 2.62 0 1.51-1.07 2.63-2.61 2.63Z"/></svg>
-              <span>CurseForge</span>
-            </a>
-            <a class="icon-link" href="https://www.spigotmc.org/members/wilczek123.1265917/" target="_blank" rel="noreferrer" aria-label="Spigot">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4.2 6.5V17.5L12 22l7.8-4.5V6.5L12 2Zm0 2.1 5.96 3.44L12 10.98 6.04 7.54 12 4.1Zm-6 5.16 5 2.89v6.89l-5-2.89V9.26Zm7 9.78v-6.89l5-2.89v6.89l-5 2.89Z"/></svg>
-              <span>Spigot</span>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-brand">
-        <h2>DevNexus</h2>
-        <p>Discord, releases, and contact routes are centralized through the project network.</p>
+  <!-- NAV -->
+  <header class="navbar">
+    <nav class="nav-container">
+      <div class="nav-brandbar">
+        <a class="nav-logo" href="index.html">DevNexus</a>
+        <p class="nav-status">Project hub for plugins, packs, and experiments</p>
       </div>
-      <div class="footer-links">
-        <a href="memorychain.html">MemoryChain</a>
-        <a href="pulseevents.html">PulseEvents</a>
-        <a href="novapixel.html">NovaPixel</a>
-        <a href="pvpflow.html">PvPFlow</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </footer>
-  </div>
 
-  <script src="assets/js/nav.js"></script>
-  <script src="assets/js/scroll.js"></script>
-  <script src="assets/js/home.js"></script>
+      <div class="nav-menu-row">
+        <div class="nav-links" id="site-nav-links">
+          <a href="#home">Home</a>
+          <a href="#featured">Featured</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="nav-toggle" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="page-main">
+
+    <!-- HERO -->
+    <section class="hero-section" id="home">
+
+      <div class="hero-grid"></div>
+      <div class="hero-glow hero-glow-left"></div>
+      <div class="hero-glow hero-glow-right"></div>
+
+      <div class="hero-content">
+        <p class="hero-kicker">Minecraft Development Hub</p>
+
+        <h1 class="hero-title">DEVNEXUS</h1>
+
+        <p class="hero-subtitle">
+          A focused development hub built around MemoryChain, with active plugins and live PvP texture packs.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="memorychain.html">Open MemoryChain</a>
+          <a class="btn btn-secondary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="https://discord.gg/ZMje3neEmK" target="_blank">Discord</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="featured-section" id="featured">
+      <div class="section-heading">
+        <p class="section-label">Main Focus</p>
+        <h2>MemoryChain</h2>
+        <p class="section-copy">
+          The core project of DevNexus. Everything revolves around this system.
+        </p>
+      </div>
+
+      <div class="featured-layout">
+        <article class="glass-card featured-main">
+          <span class="project-tag">Featured Plugin</span>
+          <h3>MemoryChain</h3>
+          <p>Main system currently in early-stage development.</p>
+
+          <div class="progress-track">
+            <div class="progress-bar progress-blue width-12"></div>
+          </div>
+
+          <p class="progress-note">Core systems in progress.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ✅ PROJECTS ADDED -->
+    <section class="projects-section" id="projects">
+
+      <div class="section-heading">
+        <p class="section-label">Projects</p>
+        <h2>All Systems</h2>
+        <p class="section-copy">
+          Active DevNexus ecosystem projects.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="glass-card project-card">
+          <h3>MemoryChain</h3>
+          <p>Main plugin system and core architecture.</p>
+          <a class="btn btn-primary" href="memorychain.html">Open</a>
+        </article>
+
+        <article class="glass-card project-card">
+          <h3>PulseEvents</h3>
+          <p>Dynamic event system for Minecraft servers.</p>
+          <a class="btn btn-primary" href="pulseevents.html">Open</a>
+        </article>
+
+        <article class="glass-card project-card">
+          <h3>NovaPixel</h3>
+          <p>Competitive PvP texture pack (modern style).</p>
+          <a class="btn btn-primary" href="novapixel.html">Open</a>
+        </article>
+
+        <article class="glass-card project-card">
+          <h3>PvPFlow</h3>
+          <p>1.8 PvP focused visual enhancement pack.</p>
+          <a class="btn btn-primary" href="pvpflow.html">Open</a>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <h2>DevNexus</h2>
+      <p>Centralized development hub and community.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="memorychain.html">MemoryChain</a>
+      <a href="pulseevents.html">PulseEvents</a>
+      <a href="novapixel.html">NovaPixel</a>
+      <a href="pvpflow.html">PvPFlow</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/home.js"></script>
 </body>
 </html>

@@ -3,120 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MemoryChain project page.">
+
+  <!-- SEO -->
+  <meta name="description" content="MemoryChain - main featured Minecraft plugin developed within DevNexus.">
+  <meta name="theme-color" content="#07111b">
+  <meta property="og:title" content="MemoryChain | DevNexus">
+  <meta property="og:description" content="The main plugin project driving the DevNexus hub.">
+  <meta property="og:type" content="website">
+
   <title>DevNexus | MemoryChain</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/pages.css">
   <link rel="stylesheet" href="assets/css/project.css">
 </head>
+
 <body class="page-project page-memorychain">
-  <div class="site-shell">
-    <header class="navbar">
-      <nav class="nav-container" aria-label="Primary">
-        <div class="nav-brandbar">
-          <a class="nav-logo" href="index.html">DevNexus</a>
-          <p class="nav-status">Project hub for plugins, packs, and experiments</p>
-        </div>
-        <div class="nav-menu-row">
-          <div class="nav-links" id="site-nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#featured">Featured</a>
-            <a href="index.html#projects">Projects</a>
-            <a href="contact.html">Contact</a>
-          </div>
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </nav>
-    </header>
+<div class="site-shell">
 
-    <main class="page-main">
-      <section class="page-hero page-hero-blue">
-        <p class="section-label">Featured Plugin</p>
-        <h1>MemoryChain</h1>
-        <p class="section-copy">MemoryChain is now the main featured plugin in DevNexus and the central focus of the whole website.</p>
-        <div class="hero-highlights">
-          <span class="signal-pill blue">Featured build</span>
-          <span class="signal-pill cyan">Main focus</span>
-          <span class="signal-pill purple">Active concept</span>
-        </div>
-      </section>
-
-      <section class="meta-layout">
-        <article class="glass-card status-card color-blue">
-          <span class="project-tag">Main Project</span>
-          <h2>Primary Build Direction</h2>
-          <p>MemoryChain now leads the site. The exact public release details are still open, but this project is the main thing the hub is organized around.</p>
-          <div class="progress-track" aria-label="MemoryChain project state">
-            <div class="progress-bar progress-blue width-12"></div>
-          </div>
-          <p class="progress-note">Current public-facing progress: 12%.</p>
-        </article>
-
-        <article class="glass-card meta-card">
-          <h3>Current Snapshot</h3>
-          <dl class="meta-grid">
-            <dt>Status</dt>
-            <dd>Featured active plugin</dd>
-            <dt>Role</dt>
-            <dd>Main project on the site</dd>
-            <dt>Progress</dt>
-            <dd>12%</dd>
-            <dt>Type</dt>
-            <dd>Minecraft plugin</dd>
-            <dt>Public Build</dt>
-            <dd>Not announced yet</dd>
-            <dt>Priority</dt>
-            <dd>Highest</dd>
-          </dl>
-        </article>
-      </section>
-
-      <section class="wip-layout">
-        <article class="glass-card notes-card">
-          <h3>Main Direction</h3>
-          <ul class="feature-list">
-            <li>MemoryChain is the central plugin of the DevNexus hub</li>
-            <li>The website now presents it as the primary active build</li>
-            <li>PulseEvents remains in development as a secondary plugin</li>
-            <li>PvPFlow and NovaPixel remain texture pack projects beside it</li>
-          </ul>
-        </article>
-
-        <article class="glass-card notes-card">
-          <h3>Next Stage</h3>
-          <ul class="status-list">
-            <li>Lock the plugin identity and first release scope</li>
-            <li>Define the first visible gameplay or utility loop</li>
-            <li>Expand the public-facing details as the build matures</li>
-            <li>Keep the rest of the site aligned around this project</li>
-          </ul>
-        </article>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-brand">
-        <h2>DevNexus</h2>
-        <p>MemoryChain is now the main featured project in the network.</p>
+  <!-- NAV -->
+  <header class="navbar">
+    <nav class="nav-container">
+      <div class="nav-brandbar">
+        <a class="nav-logo" href="index.html">DevNexus</a>
+        <p class="nav-status">Project hub for plugins, packs, and experiments</p>
       </div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="pulseevents.html">PulseEvents</a>
-        <a href="novapixel.html">NovaPixel</a>
-        <a href="pvpflow.html">PvPFlow</a>
-      </div>
-    </footer>
-  </div>
 
-  <script src="assets/js/nav.js"></script>
-  <script src="assets/js/scroll.js"></script>
-  <script src="assets/js/project.js"></script>
+      <div class="nav-menu-row">
+        <div class="nav-links" id="site-nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#featured">Featured</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <button class="nav-toggle" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="page-main">
+
+    <!-- HERO -->
+    <section class="page-hero page-hero-blue">
+      <p class="section-label">Featured Plugin</p>
+
+      <h1 class="project-title">MemoryChain</h1>
+
+      <p class="section-copy">
+        The core system behind DevNexus. MemoryChain is designed as a scalable plugin concept
+        that will define the direction of the entire project hub.
+      </p>
+
+      <!-- CTA -->
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://discord.gg/ZMje3neEmK" target="_blank">
+          Follow Development
+        </a>
+        <a class="btn btn-secondary" href="contact.html">
+          Contact
+        </a>
+      </div>
+
+      <div class="hero-highlights">
+        <span class="signal-pill blue">Main project</span>
+        <span class="signal-pill cyan">Active development</span>
+        <span class="signal-pill purple">Core system</span>
+      </div>
+
+      <p class="micro-note">Last updated: April 2026</p>
+    </section>
+
+    <!-- META -->
+    <section class="meta-layout">
+
+      <!-- STATUS -->
+      <article class="glass-card status-card color-blue">
+        <span class="project-tag">Main Project</span>
+        <h2>Development State</h2>
+
+        <p>
+          MemoryChain is currently in early-stage development. Core systems and structure
+          are being defined before moving into full implementation.
+        </p>
+
+        <div class="progress-track">
+          <div class="progress-bar progress-blue width-12"></div>
+        </div>
+
+        <p class="progress-note">Early-stage build — core systems in progress.</p>
+      </article>
+
+      <!-- META -->
+      <article class="glass-card meta-card">
+        <h3>Project Snapshot</h3>
+
+        <dl class="meta-grid">
+          <dt>Status</dt>
+          <dd>Active development</dd>
+
+          <dt>Role</dt>
+          <dd>Main featured plugin</dd>
+
+          <dt>Type</dt>
+          <dd>Minecraft plugin</dd>
+
+          <dt>Stage</dt>
+          <dd>Concept → Core systems</dd>
+
+          <dt>Public Build</dt>
+          <dd>Not released</dd>
+
+          <dt>Priority</dt>
+          <dd>Highest</dd>
+        </dl>
+      </article>
+
+    </section>
+
+    <!-- CONTENT -->
+    <section class="wip-layout">
+
+      <article class="glass-card notes-card">
+        <h3>Core Direction</h3>
+
+        <ul class="feature-list">
+          <li>Acts as the central system of the DevNexus ecosystem</li>
+          <li>Defines the long-term direction of plugin development</li>
+          <li>Built with scalability and modularity in mind</li>
+          <li>Will expand with future systems and integrations</li>
+        </ul>
+      </article>
+
+      <article class="glass-card notes-card">
+        <h3>Next Phase</h3>
+
+        <ul class="status-list">
+          <li>Finalize plugin identity and architecture</li>
+          <li>Define first gameplay / system loop</li>
+          <li>Prepare initial public showcase</li>
+          <li>Expand documentation and roadmap</li>
+        </ul>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <h2>DevNexus</h2>
+      <p>MemoryChain drives the direction of the entire project network.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="pulseevents.html">PulseEvents</a>
+      <a href="novapixel.html">NovaPixel</a>
+      <a href="pvpflow.html">PvPFlow</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/project.js"></script>
 </body>
 </html>
