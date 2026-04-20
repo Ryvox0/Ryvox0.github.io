@@ -1,0 +1,58 @@
+.page-project .page-hero {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.page-project .meta-layout,
+.page-project .wip-layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.page-project .status-card,
+.page-project .meta-card,
+.page-project .notes-card {
+  min-height: 100%;
+}
+
+.page-project .action-row {
+  margin-top: 1.4rem;
+}
+
+.page-project.page-pulseevents .page-hero h1 {
+  text-shadow: 0 0 28px rgba(88, 184, 255, 0.12);
+}
+
+.page-project.page-memorychain .page-hero h1 {
+  text-shadow: 0 0 28px rgba(88, 184, 255, 0.16);
+}
+
+.page-project.page-novapixel .page-hero h1 {
+  text-shadow: 0 0 28px rgba(53, 242, 255, 0.12);
+}
+
+.page-project.page-pvpflow .page-hero h1 {
+  text-shadow: 0 0 28px rgba(255, 91, 115, 0.12);
+}
+
+.page-project.page-voidspire .page-hero h1 {
+  text-shadow: 0 0 28px rgba(160, 106, 255, 0.12);
+}
+
+.page-project.page-coreguard .page-hero h1 {
+  text-shadow: 0 0 28px rgba(88, 184, 255, 0.12);
+}
+
+.page-project.page-rewardflow .page-hero h1 {
+  text-shadow: 0 0 28px rgba(53, 242, 255, 0.12);
+}
+
+.page-project.page-vaultlink .page-hero h1 {
+  text-shadow: 0 0 28px rgba(160, 106, 255, 0.12);
+}
+
+@media (max-width: 760px) {
+  .page-project .meta-layout,
+  .page-project .wip-layout {
+    grid-template-columns: 1fr;
+  }
+}
