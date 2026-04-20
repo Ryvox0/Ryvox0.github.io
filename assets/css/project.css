@@ -56,3 +56,10 @@
     grid-template-columns: 1fr;
   }
 }
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* wszystko startuje równo z lewej */
+}
+

@@ -182,7 +182,7 @@ main {
   border-radius: 1.6rem;
   backdrop-filter: blur(20px);
   box-shadow: var(--shadow-soft);
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* ================= BUTTONS ================= */

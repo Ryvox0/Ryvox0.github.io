@@ -515,10 +515,34 @@ main,
 }
 
 .project-card {
-  padding: 1.5rem;
+  align-items: flex-start; /* blokuje “rozciąganie” w poziomie */
+}
+
+/* stabilny slot na ikonę */
+.project-icon {
+  width: 128px;
+  height: 128px;
+
+  flex-shrink: 0; /* KLUCZ — nie pozwala się zgniatać */
+
   display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 0.9rem;
+
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* obrazek nie może wpływać na layout */
+.project-icon img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
 }
 
 .project-card h3 {
