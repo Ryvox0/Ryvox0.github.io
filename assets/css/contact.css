@@ -8,3 +8,120 @@
 .page-contact .links-panel {
   margin-top: 1rem;
 }
+
+/* Pricing Section */
+.pricing-section {
+  margin: 4rem 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.pricing-card {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.pricing-card.featured-card {
+  border: 1px solid rgba(53, 242, 255, 0.3);
+  box-shadow: 0 0 32px rgba(53, 242, 255, 0.1);
+}
+
+.pricing-card h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.price-display {
+  margin: 1.5rem 0;
+}
+
+.price-amount {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--cyan);
+  display: block;
+}
+
+.price-period {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.pricing-features {
+  list-style: none;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+.pricing-note {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.pricing-note p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Contact Card Icons */
+.card-icon-wrap {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-icon-wrap svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text);
+}
+
+.icon-cyan svg {
+  color: var(--cyan);
+}
+
+.icon-blue svg {
+  color: var(--blue);
+}
+
+.icon-purple svg {
+  color: var(--purple);
+}
+
+

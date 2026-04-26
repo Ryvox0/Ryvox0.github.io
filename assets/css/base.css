@@ -638,3 +638,73 @@ main,
 .hero-actions {
   justify-content: center;
 }
+
+/* Pricing Info Styles */
+.pricing-info {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.price-tag {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.price-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.price-details span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.price-details span::before {
+  content: "•";
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+.project-pricing {
+  margin: 0.75rem 0;
+  text-align: center;
+}
+
+.project-pricing .price-tag {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Feature Icons */
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--cyan);
+}
+
