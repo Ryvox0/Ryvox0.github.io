@@ -7,11 +7,12 @@
   --text: #eef4ff;
   --muted: #98a6cf;
   --white-soft: rgba(255, 255, 255, 0.82);
-  --blue: #58b8ff;
-  --cyan: #35f2ff;
+  --blue: #00aaff;
+  --cyan: #00ffcc;
+  --green: #00ff88;
   --purple: #a06aff;
   --red: #ff5b73;
-  --gradient-main: linear-gradient(135deg, #58b8ff 0%, #35f2ff 28%, #a06aff 62%, #ff5b73 100%);
+  --gradient-main: linear-gradient(135deg, #00aaff 0%, #00ffcc 28%, #00ff88 62%, #a06aff 100%);
   --shadow-soft: 0 24px 64px rgba(0, 0, 0, 0.42);
   --max-width: 1180px;
 }
@@ -31,10 +32,10 @@ body {
   font-family: "Rajdhani", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 8% 10%, rgba(74,168,255,.2), transparent 24%),
-    radial-gradient(circle at 84% 12%, rgba(159,92,255,.16), transparent 22%),
-    radial-gradient(circle at 75% 72%, rgba(255,77,109,.12), transparent 24%),
-    radial-gradient(circle at 10% 80%, rgba(53,242,255,.1), transparent 18%),
+    radial-gradient(circle at 8% 10%, rgba(0,170,255,.2), transparent 24%),
+    radial-gradient(circle at 84% 12%, rgba(0,255,136,.16), transparent 22%),
+    radial-gradient(circle at 75% 72%, rgba(160,106,255,.12), transparent 24%),
+    radial-gradient(circle at 10% 80%, rgba(0,255,204,.1), transparent 18%),
     linear-gradient(180deg, #02030a 0%, #060a18 45%, #03040d 100%);
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;

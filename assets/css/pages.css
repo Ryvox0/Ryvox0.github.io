@@ -1,3 +1,14 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -14,8 +25,8 @@
   position: absolute;
   inset: 6rem 0 0 0;
   background:
-    linear-gradient(rgba(74, 168, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(74, 168, 255, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(0, 170, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 170, 255, 0.06) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.72), transparent 78%);
   z-index: -2;
@@ -34,19 +45,20 @@
 .hero-glow-left {
   left: -5rem;
   top: 10rem;
-  background: rgba(53, 242, 255, 0.72);
+  background: rgba(0, 255, 204, 0.72);
 }
 
 .hero-glow-right {
   right: -5rem;
   top: 8rem;
-  background: rgba(255, 77, 109, 0.42);
+  background: rgba(0, 255, 136, 0.42);
 }
 
 .hero-content {
   max-width: 44rem;
   position: relative;
   z-index: 1;
+  animation: fadeInUp 1s ease-out;
 }
 
 .hero-content h1,
